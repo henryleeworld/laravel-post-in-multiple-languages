@@ -19,5 +19,4 @@ Route::group(['middleware' => ['auth']], function() {
     Route::resource('posts', \App\Http\Controllers\PostController::class)
         ->only('create', 'store');
 });
-
 require __DIR__.'/auth.php';
