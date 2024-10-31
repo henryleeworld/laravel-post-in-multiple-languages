@@ -1,4 +1,4 @@
-# Laravel 9 多語系貼文
+# Laravel 11 多語系貼文
 
 使用 Laravel 的本地化功能提供方便的方法來取得多語系的字串，讓網站可以簡單的支援多語系，當使用者指定語言後，系統就可以根據偏好語言顯示內容。
 
@@ -20,9 +20,13 @@ $ php artisan key:generate
 ```sh
 $ php artisan migrate
 ```
-- 執行安裝 Laravel Mix 引用的依賴項目，並執行所有 Mix 任務。
+- 執行安裝 Vite 和 Laravel 擴充套件引用的依賴項目。
 ```sh
-$ npm install && npm run dev
+$ npm install
+```
+- 執行正式環境版本化資源管道並編譯。
+```sh
+$ npm run build
 ```
 - 在瀏覽器中輸入已定義的路由 URL 來訪問，例如：http://127.0.0.1:8000。
 - 你可以經由 `/register` 來進行註冊。
@@ -31,8 +35,8 @@ $ npm install && npm run dev
 ----
 
 ## 畫面截圖
-![](https://i.imgur.com/RKOiaCr.png)
+![](https://i.imgur.com/gZW45uh.png)
 > 選擇語言中的英文，切換成英文顯示語言
 
-![](https://i.imgur.com/IvGZCf8.png)
+![](https://i.imgur.com/pTHfNBN.png)
 > 選擇語言中的繁體中文，切換成繁體中文顯示語言

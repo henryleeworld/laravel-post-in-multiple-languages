@@ -10,9 +10,9 @@
             <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
                 <div class="p-6 bg-white border-b border-gray-200">
                     <form method="POST" action="{{ route('posts.store') }}">
-                    @csrf
+                        @csrf
 
-                    <!-- Name -->
+                        <!-- Name -->
                         @foreach(config('app.available_locales') as $locale)
                         <div class="mt-4">
                             <label for="title_{{ strtolower($locale) }}">{{ trans('frontend.post.title.' . strtolower($locale)) }}</label>

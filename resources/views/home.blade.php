@@ -14,7 +14,7 @@
                         @foreach($posts as $post)
                             <div>
                                 <h2 class="text-xl">{{ $post->{'title_'.app()->getLocale()} }}</h2>
-                                <p class="mt-2">{{ substr($post->{'full_text_'.app()->getLocale()}, 0, 50) }}...</p>
+                                <p class="mt-2">{{ mb_substr($post->{'full_text_'.app()->getLocale()}, 0, 50) }}...</p>
                             </div>
                         @endforeach
                     </div>
