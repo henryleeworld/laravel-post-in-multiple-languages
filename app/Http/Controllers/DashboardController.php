@@ -4,8 +4,11 @@ namespace App\Http\Controllers;
 
 use App\Models\Post;
 
-class HomeController extends Controller
+class DashboardController extends Controller
 {
+    /**
+     * Display a listing of the resource.
+     */
     public function index()
     {
         $locale = app()->getLocale();
@@ -16,6 +19,6 @@ class HomeController extends Controller
             ->take(10)
             ->get();
 
-        return view('home', compact('posts'));
+        return view('dashboard', compact('posts'));
     }
 }

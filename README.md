@@ -1,4 +1,4 @@
-# Laravel 11 多語系貼文
+# Laravel 12 多語系貼文
 
 使用 Laravel 的本地化功能提供方便的方法來取得多語系的字串，讓網站可以簡單的支援多語系，當使用者指定語言後，系統就可以根據偏好語言顯示內容。
 
@@ -35,8 +35,8 @@ $ npm run build
 ----
 
 ## 畫面截圖
-![](https://i.imgur.com/gZW45uh.png)
+![](https://i.imgur.com/KrKrEWf.png)
 > 選擇語言中的英文，切換成英文顯示語言
 
-![](https://i.imgur.com/pTHfNBN.png)
+![](https://i.imgur.com/S8tIBs4.png)
 > 選擇語言中的繁體中文，切換成繁體中文顯示語言
